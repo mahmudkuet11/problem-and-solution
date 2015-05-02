@@ -1,0 +1,2 @@
+1. smof id problem ==> reset option
+2. wp custom post single page not found problem => settings > permalink > save change
