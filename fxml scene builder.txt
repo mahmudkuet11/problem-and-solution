@@ -1,0 +1,3 @@
+if problem to open fxml document in scene builder then do the following
+
+file > open recent > clear
