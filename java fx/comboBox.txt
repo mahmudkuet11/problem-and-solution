@@ -1,0 +1,4 @@
+at first you have to init when declare
+
+@FXML
+private ComboBox<String> category = new ComboBox();
