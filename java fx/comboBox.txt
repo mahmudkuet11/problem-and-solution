@@ -2,3 +2,48 @@ at first you have to init when declare
 
 @FXML
 private ComboBox<String> category = new ComboBox();
+
+// set combobox item from a Data Model
+
+Model
+=======================
+/******************************************
+* @override toString() method is important for combobox model
+*/*****************************************
+public class Account {
+    private String name;
+    private int id;
+    
+    public Account(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    @Override
+    public String toString(){
+        return name;
+    }
+}
+
+Controller
+=========================================
+ObservableList<Account> options = FXCollections.observableArrayList();
+        options.add(new Account("mahmud",12));
+        options.add(new Account("raju",15));
+        combobox.setItems(options);
