@@ -1,0 +1,17 @@
+java code:
+==========================
+BufferedImage img = null;
+try {
+	img = ImageIO.read(new File("src/report/profile.jpg"));
+	params.put("logo", img);
+} catch (IOException ex) {
+	Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+}catch (Exception ex) {
+	Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+}
+
+jasper report
+=======================
+1. drag an image element in the report designer
+2. create a parameter named "logo"
+3. change <parameter name="logo" class="java.lang.String"/> to <parameter name="logo" class="java.lang.Object"/>
