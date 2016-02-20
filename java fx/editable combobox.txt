@@ -89,13 +89,13 @@ public class AutoCompleteComboBoxListener<T> implements EventHandler<KeyEvent> {
 Use this  (select_account) is the combobox
 ================================================
 
-        new AutoCompleteComboBoxListener<>(select_account);
-        select_account.setOnHiding((e)->{
-            Account a = select_account.getSelectionModel().getSelectedItem();
-            select_account.setEditable(false);
-            select_account.getSelectionModel().select(a);
-        });
-        select_account.setOnShowing((e)->{
-            select_account.setEditable(true);
-        });
+new AutoCompleteComboBoxListener<>(select_account);
+select_account.setOnHiding((e)->{
+	Account a = select_account.getSelectionModel().getSelectedItem();
+	select_account.setEditable(false);
+	select_account.getSelectionModel().select(a);
+});
+select_account.setOnShowing((e)->{
+	select_account.setEditable(true);
+});
 

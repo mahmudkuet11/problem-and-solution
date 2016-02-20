@@ -2,7 +2,7 @@ java code:
 ==========================
 BufferedImage img = null;
 try {
-	img = ImageIO.read(new File("src/report/profile.jpg"));
+	img = ImageIO.read(new File("src/report/Utopia.png"));
 	params.put("logo", img);
 } catch (IOException ex) {
 	Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
